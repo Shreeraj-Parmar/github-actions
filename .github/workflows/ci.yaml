@@ -2,7 +2,7 @@ name: First Action
 
 # When to run the action
 on:
-  pull_request:
+  push:
     branches: ["main"]
 
 # Jobs to run
@@ -10,7 +10,7 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-
+    
     # Matrix Strategy to run the job on multiple versions of Node.js
     strategy:
       matrix:
