@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
-  let hello;
+  // let hello;
 
   return (
     <div className={styles.page}>
