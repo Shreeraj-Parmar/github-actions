@@ -2,7 +2,7 @@ name: First Action
 
 # When to run the action
 on:
-  push:
+  pull_request:
     branches: ["main"]
 
 # Jobs to run
