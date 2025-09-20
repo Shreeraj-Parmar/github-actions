@@ -1,0 +1,9 @@
+# npm run test // if you run test
+
+# For ESlint
+
+npm run lint
+
+# For Build
+
+npm run build
