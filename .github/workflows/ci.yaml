@@ -7,9 +7,8 @@ on :
     branches: [ "main" ]
 
 # Jobs to run
-jobs:
-
 # Lint Job For ESlint
+jobs:
   lint:
     runs-on: ubuntu-latest
 
