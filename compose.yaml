@@ -1,6 +1,6 @@
 services:
   next-server:
-    image: mrobroie/blog-app:build-bdacda595b7710b399d7336fde7bf75da50b46fa
+    image: mrobroie/blog-app:build-952f5640a30ec25be031ea13083e96b84c52b0dc
     deploy:
       replicas: 5
       update_config:
