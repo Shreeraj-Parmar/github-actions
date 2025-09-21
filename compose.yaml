@@ -14,7 +14,5 @@ services:
       - '3000:3000'
     networks:
       - blog-app-net
-  blog-server:
-    image: mrobroie/blog-app:build-670c94a69e059f80d745339c43a49aa2ebbecac3
 networks:
   blog-app-net: null
