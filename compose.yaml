@@ -11,9 +11,10 @@ services:
         parallelism: 1
         order: start-first
     ports:
-      - "3000:3000"
+      - '3000:3000'
     networks:
       - blog-app-net
-
+  blog-server:
+    image: nextjs/blog-app:build-7af3290d88d19e69592e407841518f250ea38d9d
 networks:
   blog-app-net: null
