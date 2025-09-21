@@ -30,7 +30,7 @@ jobs:
       #     private_key: ${{secrets.APP_SECRET_KEY}}
       - name: Commit files
         run: |
-          git config --local user.name shreeraj-parmar
+          git config --local user.name Shreeraj-Parmar
           git config --local user.email shreeraj.on7@gmail.com
           git add .
           git commit -m "bump the image version ${{env.IMAGE_TAG}} [skip ci]"
