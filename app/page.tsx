@@ -20,6 +20,7 @@ export default function Home() {
             Get started by editing <code>app/page.tsx</code>.
           </li>
           <li>Save and see  changes instantly.</li>
+          <li>V@ 222222</li>
         </ol>
 
         <div className={styles.ctas}>
