@@ -74,5 +74,5 @@ jobs:
             git fetch origin main
             git checkout origin/main
 
-            docker pull ${{env.IMAGE_NAME}}:${{env.IMAGE_TAG}}
-            docker stack deploy -c compose.yaml next-ci-cd
+            sudo docker pull ${{env.IMAGE_NAME}}:${{env.IMAGE_TAG}}
+            sudo docker stack deploy -c compose.yaml next-ci-cd
