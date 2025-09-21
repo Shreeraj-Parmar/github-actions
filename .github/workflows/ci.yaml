@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     
     # Matrix Strategy to run the job on multiple versions of Node.js
-    strategy:
-      matrix:
-        node-version: ["18.x", "20.x", "22.x"]
+    # strategy:
+    #   matrix:
+    #     node-version: ["18.x", "20.x", "22.x"]
 
     steps:
       - name: Checkout repository
