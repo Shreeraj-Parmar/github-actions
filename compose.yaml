@@ -14,7 +14,5 @@ services:
       - '3000:3000'
     networks:
       - blog-app-net
-  blog-server:
-    image: nextjs/blog-app:build-92372f503201487e1056d72aecfb796a5ca66a82
 networks:
   blog-app-net: null
