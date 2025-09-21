@@ -2,7 +2,7 @@ services:
   next-server:
     image: mrobroie/blog-app:build-c83aaa5ddc30cff7f5979544e4db5cce27c8bb6c
     deploy:
-      replicas: 5
+      replicas: 2
       update_config:
         order: start-first
         failure_action: rollback
