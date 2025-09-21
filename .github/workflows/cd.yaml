@@ -14,7 +14,7 @@ jobs:
       - name: Checkout the source code
         uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          persist-credentials: true
       - name: Update compose yaml
         uses: fjogeleit/yaml-update-action@v0.16.0
         with:
