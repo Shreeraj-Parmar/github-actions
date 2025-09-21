@@ -15,6 +15,6 @@ services:
     networks:
       - blog-app-net
   blog-server:
-    image: nextjs/blog-app:build-92372f503201487e1056d72aecfb796a5ca66a82
+    image: mrobroie/blog-app:build-d41bf40c77f91aec9a410655897564ba7cff89d2
 networks:
   blog-app-net: null
