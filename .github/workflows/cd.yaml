@@ -8,7 +8,7 @@ jobs:
     permissions:
       contents: write
     env:
-      IMAGE_NAME: nextjs/blog-app
+      IMAGE_NAME: mrobroie/blog-app
       IMAGE_TAG: build-${{github.sha}} #nextjs/blog-app:build-commithash
     steps:
       - name: Checkout the source code
@@ -54,7 +54,7 @@ jobs:
     name: Deploy the image to Docker Swarm Cluster
     runs-on: ubuntu-latest
     env:
-      IMAGE_NAME: nextjs/blog-app
+      IMAGE_NAME: mrobroie/blog-app
       IMAGE_TAG: build-${{github.sha}}
     needs:
       - build-and-push
