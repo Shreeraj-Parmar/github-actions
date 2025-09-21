@@ -1,0 +1,19 @@
+services:
+  next-server:
+    image: nextjs/blog-app:build-d8d40b601283bd5f50caab3665c05c902232600d
+    deploy:
+      replicas: 5
+      update_config:
+        order: start-first
+        failure_action: rollback
+        delay: 10s
+      rollback_config:
+        parallelism: 1
+        order: start-first
+    ports:
+      - "3000:3000"
+    networks:
+      - blog-app-net
+
+networks:
+  blog-app-net: null
